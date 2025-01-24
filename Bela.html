@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>apaantuh</title>
+  <style>
+      body {
+          font-family: arial, Sans-Serif;
+          margin: 20px;
+      }
+      #text {
+         font-size: 20px;
+         margin-bottom: 18px;
+      }
+      button {
+          padding: 10px 15px;
+          font-size: 15px;
+          cursor: pointer;
+      }
+      #image {
+         display: none;
+         margin-top: 20px;
+         max-width: 100%;
+         width: 200px;
+       }
+  </style>
+</head>
+<body>
+  
+    <dif id="text">teks ini akan berubah kata jika dipencet.</dif>
+    <button onclick="ubahteksdangambar()" >klik disini!</button>
+    <img id="image" src="IMG_1652.JPG" alt=" " />
+
+    <script>
+        function ubahteksdangambar() {
+
+            document.getElementById("text").innerHTML = "halo bela :) :)";
+            document.getElementById("image").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
